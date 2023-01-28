@@ -12,30 +12,34 @@ Installation
 
 1.  Install the package using pip:
 
-bashCopy code
 
-`pip install django-rest-framework-app`
+
+```
+pip install django-rest-framework-app
+```
+
 
 1.  Add the app to your INSTALLED_APPS in your Django project's settings.py file:
 
-pythonCopy code
 
-`INSTALLED_APPS = [
+```
+INSTALLED_APPS = [
     ...,
     'rest_framework',
     'django_rest_framework_app',
-]`
+]
+```
 
 1.  Add the app's URLs to your project's urls.py file:
 
-pythonCopy code
 
-`from django.urls import path, include
+```from django.urls import path, include
 
 urlpatterns = [
     ...,
     path('api/', include('django_rest_framework_app.urls')),
-]`
+]```
+
 
 Usage
 -----
@@ -45,8 +49,10 @@ The app's views and serializers can be found in the `django_rest_framework_app.v
 API Endpoints
 -------------
 
--   `/api/items/`: CRUD operations for items.
--   `/api/items/<id>`: Retrieve, update, or delete a specific item.
+-   `/empresa/`: CRUD operations for empresa.
+-   `/articulo/`: CRUD operations for empresa.
+-   `/login/`: Login system for users.
+-   `/swagger/`: Endpoints detailed documentation
 
 Authentication
 --------------

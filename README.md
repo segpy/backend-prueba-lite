@@ -33,12 +33,14 @@ INSTALLED_APPS = [
 1.  Add the app's URLs to your project's urls.py file:
 
 
-```from django.urls import path, include
+```
+from django.urls import path, include
 
 urlpatterns = [
     ...,
     path('api/', include('django_rest_framework_app.urls')),
-]```
+]
+```
 
 
 Usage
